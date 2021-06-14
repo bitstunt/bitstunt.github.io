@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EMEA</title>
+        <link rel="shortcut icon" href="/favicon.png" type="image/png">
+        <link rel="stylesheet" href="web.css">
+        <script src="https://kit.fontawesome.com/b8ec0449fc.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header id="top">
+            <img id="Logo" src="Logo.png">
+            <div id="heading">
+                <h1 class="hide">EMEA</h1>
+                <span id="sogan">Emblems of Earth</span>
+            </div>
+            <div id="headerlinks" class="hide">
+            <a href="mailto:webmailhs037@gmail.com"  ><i class="fas fa-envelope fa-lg"></i></a>
+            <a href="https://m.facebook.com/" ><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://www.instagram.com" ><i class="fab fa-instagram fa-lg"></i></a>
+                Color
+                <button onclick="headercolor('#FF073A')" style="background-color: #FF073A; cursor: pointer;"></button>
+                <button onclick="headercolor('#FFDF6C')" style="background-color: #FFDF6C; cursor: pointer;"></button>
+                <button onclick="headercolor('#9AB3F5')" style="background-color: #9AB3F5; cursor: pointer;"></button>
+            </div>
+        </header>
+        <nav id="navbar">
+            <a href="#event">Home</a>
+            <a href="#about">About</a>
+            <a href="#team" onmouseover="drop()" onmouseleave="drop()">Team</a>
+            <div id="dropdwn" onmouseleave="drop()" class="submenu">
+                <a href="">Sponsors</a>
+                <a href="">Volunteers</a>
+                <a href="">Executives</a>
+            </div>
+        </nav>
+        <article>
+            <div id="greet">
+            <span id="msg"></span><span id="cursor" class="blink">|</span>
+            </div>
+            <div id="event" class="tab">
+            <img src="event.jpeg">
+            <div class="text">
+            <h1>Event</h1>
+            <h2>World Environment Day</h2>
+            <p>
+                World Environment Day is celebrated every year worldwide on 5th of June.
+                 It was established by the United Nations General Assembly in 1972 in order to raise global awareness about the environmental issues. 
+                 It is celebrated to motivate people to take positive environmental actions in order to protect the nature on this planet.
+                 This campaign was declared when United Nations Conference on the Human Environment started. It is run by the United Nations Environment Programme.
+                 On the celebration event of World Environment Day 2015, Prime Minister of India, Narendra Modi was planted a sapling at his official residence (7, Race Course Road, New Delhi).
+                 <br>
+The main objectives of this campaign are encouraged among public by the media and celebrities through endorsing and participating in its celebration.
+ The goodwill ambassadors from United Nations Environment Programme send messages worldwide to take actions for World Environment Day. 
+ This campaign makes a call to the people to join its celebration event in mass number to get aware of the real environment conditions and be an agent of the effective programs against environmental issues to combat with the climate changes. We should involve in the celebration and take pledge to save our environment for better future.
+            </p>
+            </div>
+            </div>
+        </article>
+        <div id="colors">
+            <button onclick="headercolor('#FF073A')" style="background-color: #FF073A; cursor: pointer;"></button>
+            <button onclick="headercolor('#FFDF6C')" style="background-color: #FFDF6C; cursor: pointer;"></button>
+            <button onclick="headercolor('#9AB3F5')" style="background-color: #9AB3F5; cursor: pointer;"></button>
+            <span id="cap">Select your header color</span>
+        </div>
+        <footer>
+            <div id="about" class="smallfont">
+            <h3>About</h3>
+            This is a dummy page created for web development pracrice only.<br><b>Disclaimer:</b><i>All the contents, which includes logo, essay and picture are obtained from internet the creator of webpage has no ownership of it.</i>
+            </div>
+            <div id="Team" class="smallfont">
+            <h4>Team</h4>
+            <ul>
+            <li>Sponsors: No Sponsor</li>
+            <li>Exexutives: Creator is himself Executive and Volunteer</li>
+            </ul>
+            </div>
+            <div id="contact">
+                <b>Contact via:</b>
+                <a href="mailto:webmailhs037@gmail.com"  ><i class="fas fa-envelope fa-lg"></i></a>
+                <a href="https://m.facebook.com/" ><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="https://www.instagram.com" ><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="web.js"></script>
+    </body>
+</html>

@@ -1,0 +1,201 @@
+@import url(https://fonts.googleapis.com/css?family=Domine|Merriweather|Roboto+Slab|Arvo|Nunito|Homemade+Apple&display=swap);
+
+body{
+    margin: 0 0;
+    background-color: #FBFFFF;
+    font-family:'Nunito', sans-serif ;
+    opacity: 80%;
+}
+header{
+    background-color: #FF073A;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: min-content;
+}
+#Logo{
+    height: 70px;
+}
+#heading{
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 2px;
+}
+#headerlink{
+    align-self: flex-end;
+}
+button{border: none; outline: none; padding: 5px;}
+h1{
+    font-family: "Domine","Merriweather",'Roboto Slab',serif;
+}
+a{
+    color: black;
+    padding: 5px; 
+    text-decoration: none;
+}
+header a:visited{color: black;}
+nav{
+    position: relative;
+    background-color: #f4f0ec;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-weight: 700;
+    font-size: large;
+
+}
+nav a:visited{color: #28231D;}
+nav a:hover{background-color: #CADED2;}
+.submenu{
+    display: none;
+    position: absolute;
+    transform: translate(120%, 30%);
+    text-align: left;
+    font-weight: 400;
+    background-color: #F2F2F2;
+}
+.submenu a{display: block;}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.tab{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.text{
+    padding: 3px 5px;
+    max-width: 50%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 0 gray;
+    text-align: justfiy;
+}
+.tab img{
+    display: block;
+    margin: 40px 10px;
+    height: 9%; width: 27%;
+    border: 2px outset;
+}
+.text h1{
+    margin: 0;
+    padding: 0;
+    font-family:'Homemade Apple', cursive; 
+    font-size: xx-large; 
+    text-align: center;
+    box-shadow: 0px 1px 0px 0px black;}
+.text h2{
+    text-align: center;
+    font-weight: bold;
+}
+#greet{
+    margin: 0 auto;
+    text-align: center;
+    font-size: x-large;
+}
+.blink{
+    display: none;
+}
+footer{
+    background-color: #5A68FE;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#about{
+    max-width: 30%;
+    padding: 10px;
+}
+#team{
+    max-width: 30%;
+    box-shadow: none;
+    padding: 10px;
+}
+#colors{
+    display: none;
+}
+#contact{
+    display: none;
+}
+@media screen and (max-width: 600px){
+header{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+#heading{
+    height: 20px;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+}
+nav{
+    justify-content: space-evenly;
+    font-size: small;
+}
+.submenu{
+    text-align: center;
+    display: none;
+    width: 100%;
+    transform: translate(0%, 34%);
+}
+.hide{display: none;}
+#article{
+    margin: 0 0;
+    padding: 0 0;
+}
+.tab{
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.tab img{
+    width:70%
+}
+.text{
+    margin: 0 0;
+    padding: 0 0;
+    font-size: smaller;
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: 0 0 0 0 gray;
+}
+#greet{ font-size: medium;}
+footer{
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+#about{
+    max-width: fit-content;
+    padding: auto;
+}
+#team{
+    max-width: fit-content;
+    padding: auto;
+}
+.smallfont{font-size: smaller;}
+#colors{
+    display: flex;
+    flex-direction: row;
+}
+#cap{
+    padding: 0 10px;
+    font-size: x-small;
+    font-weight: 300;
+}
+#contact{
+    display: block;
+    flex-grow: 1;
+    text-align: center;
+}
+}
